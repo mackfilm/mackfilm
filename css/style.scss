@@ -1,0 +1,63 @@
+---
+###
+# note: will result in an all-in-one-file stylesheet e.g. style.css
+#   in _config.yml add:
+#     sass:
+#       sass_dir: css
+#       style:    expanded
+---
+
+
+@import 'settings';
+@import 'https://fonts.googleapis.com/css?family=Cardo';
+/*
+ * css styles go here
+ */
+
+body {
+  font-family: $font-family;
+  color: #E9E9EB;
+  background: #2A2C39;
+  padding: 1rem;
+}
+
+a, a:visited {
+  color: $link-color;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.section {
+  max-width: 30rem;
+}
+
+#header {
+  padding: 4px;
+}
+
+#header .big {
+  font-size:   140%;
+  font-weight: bold;
+}
+
+#header .small {
+  font-size:    90%;
+  color:        grey;
+  padding-left: 15px;
+}
+
+#nav {
+  padding: 6px;
+}
