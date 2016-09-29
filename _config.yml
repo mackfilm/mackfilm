@@ -15,11 +15,11 @@ url:   'http://mackfilm.github.io/'
 
 
 nav:
-- { title: 'Welcome',              href: '' }
-- { title: 'Page Two',             href: '/two.html' }
-- { title: 'Page Three',           href: '/three.html' }
-- { title: 'Questions? Comments?', href: '/questions' }
-- { title: 'About',                href: '/about' }
+- { title: 'Welcome',              href: 'index.html' }
+- { title: 'Page Two',             href: 'two.html' }
+- { title: 'Page Three',           href: 'three.html' }
+- { title: 'Questions? Comments?', href: 'questions' }
+- { title: 'About',                href: 'about' }
 
 
 #########################
