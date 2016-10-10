@@ -1,6 +1,49 @@
 ---
 layout: default
 title:  Mack
+images:
+  - image_path: /images/mack_01.jpg
+    title: Apple Pie
+  - image_path: /images/mack_02.jpg
+    title: Birthday Cake
+  - image_path: /images/mack_03.jpg
+    title: Black Forest
+  - image_path: /images/mack_04.jpg
+    title: Brownie
+  - image_path: /images/mack_05.jpg
+    title: Cheese Cake
+  - image_path: /images/mack_06.jpg
+    title: Chocolate Cake
+  - image_path: /images/mack_07.jpg
+    title: Apple Pie
+  - image_path: /images/mack_08.jpg
+    title: Birthday Cake
+  - image_path: /images/mack_09.jpg
+    title: Black Forest
+  - image_path: /images/mack_10.jpg
+    title: Brownie
+  - image_path: /images/mack_11.jpg
+    title: Cheese Cake
+  - image_path: /images/mack_12.jpg
+    title: Chocolate Cake
+  - image_path: /images/mack_13.jpg
+    title: Chocolate Cake
+  - image_path: /images/mack_14.jpg
+    title: Apple Pie
+  - image_path: /images/mack_15.jpg
+    title: Birthday Cake
+  - image_path: /images/mack_16.jpg
+    title: Black Forest
+  - image_path: /images/mack_17.png
+    title: Brownie
+  - image_path: /images/mack_18.jpg
+    title: Cheese Cake
+  - image_path: /images/mack_19.jpg
+    title: Chocolate Cake
+  - image_path: /images/mack_20.jpg
+    title: Brownie
+  - image_path: /images/mack_21.png
+    title: Cheese Cake
 ---
 <div class='flex-center'>
   <div class='section'>
@@ -22,8 +65,14 @@ title:  Mack
       and he is worse who decries them on that account!' he added, a minute later.
     </p>
     <br>
-    <div>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/trbUYVF78C4" frameborder="0" allowfullscreen></iframe>
-    </div>
+  </div>
+</div>
+<div class='flex-center'>
+  <div class="photo-gallery flex-space-around">
+    {% for image in page.images %}
+      <div class='photo-container'>
+        <img src="{{ image.image_path }}" alt="{{ image.title}}" style='height:200px;'/>
+      </div>
+    {% endfor %}
   </div>
 </div>
