@@ -35,6 +35,11 @@ a:hover {
   justify-content: center;
 }
 
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
+}
+
 .text-center {
   text-align: center;
 }
@@ -60,4 +65,21 @@ a:hover {
 
 #nav {
   padding: 6px;
+}
+
+.photo-gallery {
+  flex-wrap: wrap;
+}
+
+.photo-container {
+  margin: 10px;
+  width: 200px; /* or whatever is required */
+  text-align: center; /* ensures the image is always in the h-middle */
+  overflow: hidden; /* hide the cropped portion */
+}
+
+img {
+  position: relative; /* allows repositioning */
+  left: 100%; /* move the whole width of the image to the right */
+  margin-left: -200%; /* magic! */
 }
