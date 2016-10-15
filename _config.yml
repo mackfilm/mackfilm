@@ -15,12 +15,9 @@ path:  ''
 url:   'http://mackfilm.github.io/'
 
 nav:
-- { title: 'Welcome',              href: 'index.html' }
-- { title: 'Page Two',             href: 'two.html' }
-- { title: 'Page Three',           href: 'three.html' }
-- { title: 'Questions? Comments?', href: 'questions' }
-- { title: 'About',                href: 'about' }
-
+- { title: 'Mack',                 href: 'index.html' }
+- { title: 'IndieGoGo',            href: 'https://www.indiegogo.com/projects/mack--3#/' }
+- { title: 'About',                href: 'about.html' }
 
 #########################
 # more settings
