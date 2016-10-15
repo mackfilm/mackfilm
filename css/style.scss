@@ -9,6 +9,7 @@
 
 
 @import 'settings';
+@import 'fluidbox.min';
 @import 'https://fonts.googleapis.com/css?family=Cardo';
 /*
  * css styles go here
@@ -16,8 +17,8 @@
 
 body {
   font-family: $font-family;
-  color: #E9E9EB;
-  background: #2A2C39;
+  color: black;
+  background: #fff;
   padding: 1rem;
 }
 
@@ -33,6 +34,11 @@ a:hover {
 .flex-center {
   display: flex;
   justify-content: center;
+}
+
+.flex-space-around {
+  display: flex;
+  justify-content: space-around;
 }
 
 .text-center {
@@ -60,4 +66,15 @@ a:hover {
 
 #nav {
   padding: 6px;
+}
+
+.photo-gallery {
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.photo-square {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
 }
