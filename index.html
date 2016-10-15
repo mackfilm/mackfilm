@@ -76,7 +76,8 @@ images:
     {% for image in page.images %}
       <div>
         <a href="{{ image.image_path }}" class="fluid-gallery" title="{{ image.title }}">
-          <div style="background-image: url('{{ image.image_path }}')" class='photo-square'>
+          <div style="background-image: url('{{ image.image_path }}')" class='photo-square'>            
+          </div>
         </a>
       </div>
     {% endfor %}

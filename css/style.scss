@@ -70,10 +70,10 @@ a:hover {
 
 .photo-gallery {
   flex-wrap: wrap;
-  padding: 0 1rem;
 }
 
 .photo-square {
+  margin: 1rem;
   height: 200px;
   width: 200px;
   background-repeat: no-repeat;
