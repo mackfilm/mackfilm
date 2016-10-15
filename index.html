@@ -74,9 +74,11 @@ images:
 <div class='flex-center'>
   <div class="photo-gallery flex-space-around">
     {% for image in page.images %}
-      <a href="{{ image.image_path }}" class="fluid-gallery" title="{{ image.title }}">
-        <div style="background-image: url('{{ image.image_path }}')" class='photo-square'>
-      </a>
+      <div>
+        <a href="{{ image.image_path }}" class="fluid-gallery" title="{{ image.title }}">
+          <div style="background-image: url('{{ image.image_path }}')" class='photo-square'>
+        </a>
+      </div>
     {% endfor %}
   </div>
 </div>
