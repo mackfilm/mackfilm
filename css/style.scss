@@ -9,6 +9,7 @@
 
 
 @import 'settings';
+@import 'fluidbox.min';
 @import 'https://fonts.googleapis.com/css?family=Cardo';
 /*
  * css styles go here
@@ -16,8 +17,8 @@
 
 body {
   font-family: $font-family;
-  color: #E9E9EB;
-  background: #2A2C39;
+  color: black;
+  background: #fff;
   padding: 1rem;
 }
 
@@ -69,17 +70,12 @@ a:hover {
 
 .photo-gallery {
   flex-wrap: wrap;
+  padding: 0 1rem;
 }
 
-.photo-container {
-  margin: 10px;
-  width: 200px; /* or whatever is required */
-  text-align: center; /* ensures the image is always in the h-middle */
-  overflow: hidden; /* hide the cropped portion */
-}
-
-img {
-  position: relative; /* allows repositioning */
-  left: 100%; /* move the whole width of the image to the right */
-  margin-left: -200%; /* magic! */
+.photo-square {
+  height: 200px;
+  width: 200px;
+  background-position: center;
+  background-size: contain;
 }
